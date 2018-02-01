@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- DO NOT OVERWRITE THE PREVIOUS VERSIONS (for grading)
+Create a functioning navigation bar with jQuery
+-Watch for click events
+Change the content of the page
+Make it work for at least 3 different pages
+One page should allow the user to change the styling
+E.g., change the font type (radio button?)
+E.g., change the font color (dropdown?)
+Etc.
+Add at least one animation
+Single HTML page only
+Finish the styling in a professional manner
+Recommended: make it your actual homepage
+Submit link to GitHub repository and link to actual page-->
+<html>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<title>M3</title>
+<head>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	    $("button#b1").click(function(){
+	        $("img").slideToggle();
+		 });
+	});
+
+	$(document).ready(function(){
+	    $("button#b1").click(function(){
+	        $("table").slideToggle();
+		 });
+	});
+
+	$(document).ready(function(){
+	    $("a#a2").click(function(){
+	        $("div.body").css({"background-color": "white", "font-family": "Times","font-size": "110%", "color": "black"});
+					$("img").css({"border-radius": "20px"});
+			 });
+	});
+
+
+	</script>
+</head>
+
+
+<h1>Jaime - Home Page</center></h1>
+<div class="navbar">
+<a href="http://jballe.it.pointpark.edu/homepage/" class="button">M1 Assignment</a>
+<a href="http://jballe.it.pointpark.edu/homepage/module2.html" class="button">M2 Assignment</a>
+<a href="http://itso.pointpark.edu/" class="button">ITSO</a>
+<a id=a2 class="button">Change Style</a>
+<br><br>
+</div>
+
+<div>
+<img  src="DisneyU.png"/><br>
+</div>
+<br>
+
+<div>
+<table>
+	<tr>
+	<td>INTERESTS</td>
+	<td>CURRENT COURSES</td>
+	</tr>
+<tr><td>Technology</td>
+<td>CMPS261</td></tr>
+<tr><td>Disney</td>
+<td>CMPS262</td></tr>
+<tr><td>Animation</td>
+<td>CMPS480</td></tr>
+<tr><td>Travel</td>
+<td>CMPS271</td></tr>
+</table><br>
+<button id=b1>Toggle View</button>
+</div>
+<br>
+<br>
+<div class="body">
+<h3>About Me</h3>
+		<p>Non-traditional student majoring in Information Technology at Point Park University. Originally from Honolulu moved to Pittsburgh in 2016. President of the Information Technology Student Organization on campus and
+			Vice President of the Student Veterans Association Point Park Chapter.</p>
+<h4>Work Experience</h4>
+
+<ul class="list1">
+	<li>Information Tecnology Specialist: Centers For Disease Control and Prevention</li>
+	<li>Senior Enlisted Manager, Public Affairs/Marketing, Supply Chain Management: US Military</li>
+	<li>Intructor of Military History, Encrypted Communications, Logistics Management: US Military</li>
+	<li>Tour Director/Special Events Manager: The Walt Disney Company</li>
+	<li>Supervisor, Technology Presentation Team: The Walt Disney Company-Disneyland Resort</li>
+	<li>Supervisor, Concierge Team Disneyland Dream Suite: The Walt Disney Company-Disneyland Resort</li>
+	<li>Buyer/Planner, Semiconductors 300mm Wafer CMP: Applied Materials
+<h4>Education</h4>
+<ul class="list2">
+	<li>Associate in Arts, Marketing</li>
+	<li>CEH</li>
+	<li>CompTIA Security+</li>
+	<li>Disney Coporate University: Leadership/Management, Media Relations, Event Planning</li>
+	<li>US Military Trade Certifications: Logistics/Supply Chain Management, Leadership/Management, Expeditionary Warfare Specialist (EXW), Government Contracts/Purachsing</li>
+
+</div>
+
+
+<div class=contact>
+<p>Contact:  <a href="mailto:jballe@pointpark.edu">JBalle@pointpark.edu</a>
+</div>
+
+</body>
+
+</html>
